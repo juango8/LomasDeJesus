@@ -1,0 +1,38 @@
+.container-oportunities {
+  background-image: url('src/assets/img/fondo/fondo.jpg');
+  background-size: 100%;
+  width: 110rem;
+  text-align: center;
+  align-items: center;
+  padding: 6em 6em 3em;
+  /*margin: 0;
+  top:50%;
+  position: absolute;*/
+}
+
+h1 {
+  font-size: 46px;
+  font-family: 'Belleza', sans-serif;
+}
+
+p {
+  margin: 2em auto 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.botonb:hover {
+  color: #03989E;
+  cursor: pointer;
+}
+
+.botonb {
+  font-family: 'Alegreya', serif;
+  text-align: right;
+  font-size: 1.3em;
+  margin-top: 1.5em;
+}
+
+.icon {
+  margin-left: 0.2em;
+}

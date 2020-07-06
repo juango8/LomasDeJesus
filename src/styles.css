@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  /*height: 100vh;*/
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/*.container-scroll {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  !* CSS Smooth Scroll *!*/
+/*  overflow-y: scroll;*/
+/*  scroll-behavior: smooth;*/
+/*  scroll-snap-type: y mandatory;*/
+/*}*/
+
+/*.lead {*/
+/*  font-size: 1.5rem;*/
+/*}*/
+
+/*.navbar ul {*/
+/*  display: flex;*/
+/*  list-style: none;*/
+/*  width: 100%;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.navbar ul li {*/
+/*  margin: 0 1rem;*/
+/*  padding: 1rem;*/
+/*}*/
+
+/*.navbar ul li a {*/
+/*  text-decoration: none;*/
+/*  text-transform: uppercase;*/
+/*  color: black;*/
+/*}*/
+
+/*.navbar ul li a:hover {*/
+/*  color: skyblue;*/
+/*}*/
+
+/*.section {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  text-align: left;*/
+/*  width: 100%;*/
+/*  height: auto;*/
+/*  left:0%;*/
+/*  position: absolute;*/
+/*  !* Scroll Snap *!*/
+/*  scroll-snap-align: center;*/
+/*  background-color: white;*/
+/*}*/
+
+/*#about {*/
+/*  background-color: #00003d;*/
+/*  color: white;*/
+/*  position: relative;*/
+/*}*/
+
+/*#oportunities {*/
+/*  color: #00003d;*/
+/*  position: relative;*/
+/*  background-image: url('assets/img/fondo/fondo.jpg');*/
+/*}*/
+
+/*.section1 {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  text-align: center;*/
+/*  width: 100%;*/
+/*  !* Scroll Snap *!*/
+/*  scroll-snap-align: center;*/
+/*  background-color: white;*/
+/*}*/
+/*.section2 {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  text-align: center;*/
+/*  width: 100%;*/
+/*  height: 80vh;*/
+/*  !* Scroll Snap *!*/
+/*  scroll-snap-align: center;*/
+/*  background-color: white;*/
+/*}*/
+
+
+/*!* Section Images *!*/
+
+/*::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/

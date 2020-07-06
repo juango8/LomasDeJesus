@@ -1,0 +1,47 @@
+.navbar-image {
+  position: relative;
+  /*width: 100vw;*/
+  height: 50em;
+}
+
+.navbar-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.container-banner {
+  position: absolute;
+  width: 30%;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.banner-noticias {
+  display: block;
+  background-color: rgba(0, 0, 61, .48);
+  position: absolute;
+  text-align: right;
+  padding: 4em 4em 10em 3em;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 35rem;
+  height: 36em;
+}
+
+.titulo h1 {
+  font-size: 3.5em;
+  color: white;
+  font-family: 'Amaranth', serif;
+}
+
+.subtexto {
+  margin-top: 50px;
+}
+
+.subtexto p {
+  font-size: 2em;
+  color: white;
+  font-family: 'Amaranth', serif;
+}

@@ -1,0 +1,22 @@
+.container-about {
+  background-color: #00003d;
+  text-align: center;
+  align-items: center;
+  padding: 10em 6em;
+  width: 110rem;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: 'Belleza', serif;
+}
+
+#vision h1 {
+  margin-top: 2em;
+}
+
+p {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+}
