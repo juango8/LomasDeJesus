@@ -7,6 +7,7 @@ import { NewsComponent } from './components/news/news.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { OportunitiesComponent } from './components/oportunities/oportunities.component';
+import { ValuesComponent } from './components/values/values.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { OportunitiesComponent } from './components/oportunities/oportunities.co
     NewsComponent,
     AboutComponent,
     HomeComponent,
-    OportunitiesComponent
+    OportunitiesComponent,
+    ValuesComponent
   ],
   imports: [
     BrowserModule

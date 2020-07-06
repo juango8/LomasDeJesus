@@ -1,0 +1,42 @@
+.container-values {
+  background-color: #03989E;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding: 3em 6em 3em;
+  width: 110rem;
+  /*height: 80vh;*/
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Belleza', serif;
+}
+
+h2 {
+  font-size: 2em;
+  height: 2.5em;
+  margin-bottom: 1em;
+  font-family: 'Belleza', serif;
+}
+
+p {
+  font-family: 'Belleza', serif;
+  font-size: 1.5em;
+}
+
+.values-item {
+  width: 80%;
+  margin: 0 auto;
+  /*background: greenyellow;*/
+  display: flex;
+  flex-direction: row;
+  /*align-items: stretch;*/
+  justify-content: space-around;
+}
+
+.item {
+  /*background: pink;*/
+  width: 25%;
+  margin: 2em;
+}
