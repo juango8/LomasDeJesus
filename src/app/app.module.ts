@@ -8,6 +8,11 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { OportunitiesComponent } from './components/oportunities/oportunities.component';
 import { ValuesComponent } from './components/values/values.component';
+import { SocialComponent } from './components/gallery/social/social.component';
+import { NatureComponent } from './components/gallery/nature/nature.component';
+import { WorksComponent } from './components/gallery/works/works.component';
+import { SafePlaceComponent } from './components/safe-place/safe-place.component';
+import { SeaFriendsComponent } from './components/sea-friends/sea-friends.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { ValuesComponent } from './components/values/values.component';
     AboutComponent,
     HomeComponent,
     OportunitiesComponent,
-    ValuesComponent
+    SocialComponent,
+    NatureComponent,
+    WorksComponent,
+    ValuesComponent,
+    SafePlaceComponent,
+    SeaFriendsComponent
   ],
   imports: [
     BrowserModule

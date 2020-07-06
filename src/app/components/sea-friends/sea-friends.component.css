@@ -1,0 +1,59 @@
+.container-sea-friends {
+  background-color: #03989E;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding: 5em 6em 5em;
+  width: 110rem;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: 'Belleza', serif;
+}
+
+#vision h1 {
+  margin-top: 2em;
+}
+
+p {
+  text-align: center;
+  margin: 2em auto;
+  font-size: 30px;
+}
+
+.buttonText {
+  /*margin-top: 0.4em;*/
+  font-size: 2.5em;
+  margin: auto;
+  font-family: 'Belleza', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonRight .buttonText {
+  padding-top: .7em;
+}
+
+.buttonLeft, .buttonRight {
+  width: 35%;
+  height: 8em;
+  margin: 0 auto 2em;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.buttonLeft:hover, .buttonRight:hover {
+  cursor: pointer;
+  color: #00003d;
+  border-top: 2px solid #00003d;
+  border-bottom: 2px solid #00003d;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}

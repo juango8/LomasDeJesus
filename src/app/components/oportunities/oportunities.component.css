@@ -21,18 +21,36 @@ p {
   text-align: center;
 }
 
-.botonb:hover {
-  color: #03989E;
+.buttonText {
+  /*margin-top: 0.4em;*/
+  font-size: 2.5em;
+  margin: auto;
+  padding-top: .7em;
+  font-family: 'Belleza', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonLeft, .buttonRight {
+  width: 35%;
+  height: 8em;
+  margin: 0 auto 2em;
+  border-top: 2px solid #00003d;
+  border-bottom: 2px solid #00003d;
+  color: #00003d;
+}
+
+.buttonLeft:hover, .buttonRight:hover {
   cursor: pointer;
+  color: #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
-.botonb {
-  font-family: 'Alegreya', serif;
-  text-align: right;
-  font-size: 1.3em;
-  margin-top: 1.5em;
-}
-
-.icon {
-  margin-left: 0.2em;
+.buttons {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
 }
