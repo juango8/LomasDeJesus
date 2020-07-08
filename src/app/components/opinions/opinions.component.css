@@ -1,0 +1,53 @@
+.container-opinions {
+  background-color: #ffffff;
+  color: #00003d;
+  text-align: center;
+  align-items: center;
+  padding: 3em 6em 3em;
+  width: 110rem;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Belleza', serif;
+}
+
+h2 {
+  font-size: 2em;
+  height: 2.5em;
+  margin-bottom: 1em;
+  font-family: 'Belleza', serif;
+}
+
+p {
+  font-family: 'Belleza', serif;
+  font-size: 1.5em;
+}
+
+.values-item {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item {
+  width: 25%;
+  margin: 2em;
+}
+
+.item-text {
+  width: 100%;
+  height: auto;
+}
+
+.item-text img {
+  height: 6em;
+  display: inline;
+  /*position: absolute;*/
+}
+
+.item-text p {
+  display: inline;
+}

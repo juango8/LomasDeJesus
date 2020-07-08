@@ -13,6 +13,7 @@ import { NatureComponent } from './components/gallery/nature/nature.component';
 import { WorksComponent } from './components/gallery/works/works.component';
 import { SafePlaceComponent } from './components/safe-place/safe-place.component';
 import { SeaFriendsComponent } from './components/sea-friends/sea-friends.component';
+import { OpinionsComponent } from './components/opinions/opinions.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SeaFriendsComponent } from './components/sea-friends/sea-friends.compon
     WorksComponent,
     ValuesComponent,
     SafePlaceComponent,
-    SeaFriendsComponent
+    SeaFriendsComponent,
+    OpinionsComponent
   ],
   imports: [
     BrowserModule
