@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lomas-de-jesus"
+    }
+  },
+  "defaultProject": "lomas-de-jesus",
+  "cli": {
+    "analytics": "7da7508e-4869-40cc-94d4-5639d4e19346"
+  }
 }
