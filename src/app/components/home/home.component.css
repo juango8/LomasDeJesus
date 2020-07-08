@@ -1,6 +1,6 @@
 .navbar-image {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: 50em;
 }
 
@@ -22,16 +22,16 @@
   background-color: rgba(0, 0, 61, .48);
   position: absolute;
   text-align: right;
-  padding: 4em 4em 10em 3em;
+  padding: 10em 4em 10em 3em;
   top: 0;
   right: 0;
   z-index: 5;
-  width: 33%;
-  height: 36em;
+  width: 100%;
+  height: 30em;
 }
 
 .titulo h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   color: white;
   font-family: 'Amaranth', serif;
 }
@@ -41,7 +41,7 @@
 }
 
 .subtexto p {
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   font-family: 'Amaranth', serif;
 }

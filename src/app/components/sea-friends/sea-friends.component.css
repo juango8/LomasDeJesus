@@ -4,7 +4,7 @@
   text-align: center;
   align-items: center;
   padding: 5em 6em 5em;
-  width: 110rem;
+  max-width: 100%;
 }
 
 h1 {

@@ -1,5 +1,6 @@
 .container-scroll {
-  width: 100%;
+  width: 100vw;
+  max-width: 1600px;
   height: 100%;
   /* CSS Smooth Scroll */
   overflow-y: scroll;
@@ -8,29 +9,6 @@
   margin: auto;
 }
 
-@media (min-width: 640px) {
-  .container-scroll {
-      max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container-scroll {
-      max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container-scroll {
-      max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container-scroll {
-      max-width: 1280px;
-  }
-}
 
 .section {
   display: flex;

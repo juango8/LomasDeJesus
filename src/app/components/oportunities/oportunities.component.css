@@ -1,10 +1,10 @@
 .container-oportunities {
   background-image: url('src/assets/img/fondo/fondo.jpg');
   background-size: 100%;
-  width: 110rem;
+  max-width: 100%;
   text-align: center;
   align-items: center;
-  padding: 6em 6em 3em;
+  padding: 3em 6em;
   /*margin: 0;
   top:50%;
   position: absolute;*/
