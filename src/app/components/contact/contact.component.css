@@ -1,0 +1,165 @@
+.container-contact {
+    position: relative;
+    max-width: 100%;
+    height: 50em;
+}
+
+.container-contact img {
+    height: 100%;
+    width: 100%;
+}
+
+.container-banner {
+    position: absolute;
+    width: 30%;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.banner-noticias {
+    display: block;
+    background-color: rgba(0, 0, 61, .48);
+    position: absolute;
+    text-align: right;
+    padding: 10em 4em 10em 3em;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 100%;
+    height: 30em;
+    color: white;
+}
+
+.titulo h1 {
+    font-size: 3em;
+    font-family: 'Amaranth', serif;
+}
+
+.titulo h2 {
+    font-size: 2.3em;
+    font-family: 'Amaranth', serif;
+}
+
+.titulo p {
+    font-family: 'Belleza', sans-serif;
+    font-size: 2em;
+}
+
+.subtexto {
+    margin-top: 50px;
+}
+
+.subtexto p {
+    font-size: 1.5em;
+    font-family: 'Amaranth', serif;
+}
+
+.contact-form {
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 3%;
+    height: 100%;
+    color: white;
+}
+
+.data {
+    text-align: left;
+    margin-top: 8em;
+}
+
+.data h1 {
+    font-size: 2.3em;
+    font-family: 'Amaranth', serif;
+}
+
+.ubication {
+    color: #03989E;
+    font-size: 1.6em;
+    text-align: left;
+    margin-top: 3em;
+    font-family: 'Amaranth', serif;
+    transition: .5s;
+}
+
+.ubication:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.form {
+    margin-top: 0em;
+}
+
+.description-form {
+    text-align: left;
+    font-size: 1.5em;
+    font-family: 'Alegreya', serif;
+}
+
+.grid-container {
+    margin-top: 2em;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 45% 35%;
+    grid-template-rows: 30% 30% 30% 10%;
+    gap: 10px 1px;
+    grid-template-areas: "Nombre Mensaje" "E-mail Mensaje" "Teléfono Mensaje" ". button";
+}
+
+.Nombre {
+    grid-area: Nombre;
+}
+
+.E-mail {
+    grid-area: E-mail;
+}
+
+.Teléfono {
+    grid-area: Teléfono;
+}
+
+.Mensaje {
+    grid-area: Mensaje;
+}
+
+.button {
+    grid-area: button;
+    margin-left: 50%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.input-form {
+    width: 90%;
+    height: 100%;
+    font-size: 1.5em;
+}
+
+.input-form-mensaje {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    font-size: 1.5em;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #575780;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    transition: .5s;
+    font-size: 1.5em;
+    font-family: 'Alegreya', serif;
+}
+
+.btn-submit:hover {
+    background-color: rgb(0, 0, 61);
+    cursor: pointer;
+}
+
+.data-content {
+    font-family: 'Alegreya', serif;
+    font-size: 1.5em;
+}

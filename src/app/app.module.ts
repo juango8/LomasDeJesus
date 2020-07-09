@@ -14,6 +14,8 @@ import { WorksComponent } from './components/gallery/works/works.component';
 import { SafePlaceComponent } from './components/safe-place/safe-place.component';
 import { SeaFriendsComponent } from './components/sea-friends/sea-friends.component';
 import { OpinionsComponent } from './components/opinions/opinions.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,10 @@ import { OpinionsComponent } from './components/opinions/opinions.component';
     ValuesComponent,
     SafePlaceComponent,
     SeaFriendsComponent,
-    OpinionsComponent
+    OpinionsComponent,
+    SeaFriendsComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
