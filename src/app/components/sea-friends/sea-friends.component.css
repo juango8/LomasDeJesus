@@ -34,7 +34,7 @@ p {
 }
 
 .buttonRight .buttonText {
-  padding-top: .9em;
+  margin: .9em auto;
 }
 
 .buttonLeft, .buttonRight {
