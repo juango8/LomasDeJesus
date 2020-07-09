@@ -3,17 +3,18 @@
   color: #00003d;
   text-align: center;
   align-items: center;
-  padding: 3em 6em 3em;
-  width: 110rem;
+  padding: 3em 0em 3em;
+  max-width: 100%;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2.5em;
   font-family: 'Belleza', serif;
+  margin-bottom: 2em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   height: 2.5em;
   margin-bottom: 1em;
   font-family: 'Belleza', serif;
@@ -21,8 +22,14 @@ h2 {
 
 p {
   font-family: 'Belleza', serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
+
+
+.round-image{
+  border-radius:80%;
+}
+
 
 .values-item {
   width: 80%;
@@ -33,7 +40,7 @@ p {
 }
 
 .item {
-  width: 25%;
+  width: 30%;
   margin: 2em;
 }
 
@@ -43,7 +50,7 @@ p {
 }
 
 .item-text img {
-  height: 6em;
+  height: 3em;
   display: inline;
   /*position: absolute;*/
 }
