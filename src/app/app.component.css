@@ -1,6 +1,6 @@
 .container-scroll {
   width: 100vw;
-  max-width: 1600px;
+  max-width: 2000px;
   height: 100%;
   /* CSS Smooth Scroll */
   overflow-y: scroll;
