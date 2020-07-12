@@ -1,31 +1,30 @@
 .container-oportunities {
   background-image: url('src/assets/img/fondo/fondo.jpg');
-  background-size: 100% 100%;
+  background-size: auto 100%;
   max-width: 100%;
   text-align: center;
   align-items: center;
-  padding: 3em 6em;
-  /*margin: 0;
-  top:50%;
-  position: absolute;*/
+  padding: 3em 0;
+  margin: 0 auto;
 }
 
-h1 {
-  font-size: 46px;
+.text h1 {
+  font-size: 3em;
   font-family: 'Belleza', sans-serif;
 }
 
-p {
+.text p {
   margin: 2em auto 0;
-  font-size: 24px;
+  font-size: 2em;
   text-align: center;
+}
+.text {
+  padding: 0 6em;
 }
 
 .buttonText {
-  /*margin-top: 0.4em;*/
   font-size: 2.5em;
-  margin: auto;
-  padding-top: .7em;
+  margin: .7em auto;
   font-family: 'Belleza', sans-serif;
   display: flex;
   justify-content: center;
@@ -33,10 +32,30 @@ p {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .buttonLeft, .buttonRight {
+    float: left;
+    width: 60%!important;
+  }
+  .buttons {
+    flex-direction: column!important;
+  }
+  .buttonText {
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
+
 .buttonLeft, .buttonRight {
-  width: 35%;
-  height: 8em;
-  margin: 0 auto 2em;
+  width: 33%;
+  height: 100%;
+  margin: 2em auto;
   border-top: 2px solid #00003d;
   border-bottom: 2px solid #00003d;
   color: #00003d;
@@ -53,4 +72,5 @@ p {
   margin-top: 3em;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
