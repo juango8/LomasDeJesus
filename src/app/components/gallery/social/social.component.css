@@ -20,9 +20,13 @@ h1 {
 }
 .info img{
   width: 60vw;
-  /*height: 80vh;*/
 }
 
+@media only screen and (max-width: 768px) {
+  .info img{
+    width: 100vw;
+  }
+}
 
 .info {
   width:auto;
@@ -61,7 +65,6 @@ h1 {
   margin: 0 5%;
   width: 90%!important;
   height: 7em;
-  /*background: greenyellow;*/
   bottom: 10%;
   text-align: center;
 }

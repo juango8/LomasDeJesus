@@ -20,10 +20,14 @@ h1 {
   margin:0 auto;
 }
 .slick-slide img{
-  /*width: 60vw;*/
-  height: 80vh;
+  width: 60vw;
 }
 
+@media only screen and (max-width: 768px) {
+  .slick-slide img{
+    width: 100vw;
+  }
+}
 
 .info {
   width:auto;
