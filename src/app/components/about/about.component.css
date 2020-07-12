@@ -2,12 +2,12 @@
   background-color: #00003d;
   text-align: center;
   align-items: center;
-  padding: 10em 6em;
+  padding: 8em 6em;
   max-width: 100%;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 3em;
   font-family: 'Belleza', serif;
 }
 
@@ -16,7 +16,7 @@ h1 {
 }
 
 p {
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 2em;
 }
