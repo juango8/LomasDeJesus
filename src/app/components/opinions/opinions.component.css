@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   height: 2.5em;
   margin-bottom: 1em;
   font-family: 'Belleza', serif;
@@ -22,7 +22,7 @@ h2 {
 
 p {
   font-family: 'Belleza', serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 
@@ -72,8 +72,9 @@ p {
 }
 
 .item-text {
-  width: 100%;
+  width: 85%;
   height: auto;
+  margin: 0 auto;
 }
 
 .item-text img {
