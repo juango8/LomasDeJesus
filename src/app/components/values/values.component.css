@@ -3,9 +3,8 @@
   color: #ffffff;
   text-align: center;
   align-items: center;
-  padding: 3em 4em;
+  padding: 3em 0;
   max-width: 100%;
-  /*height: 80vh;*/
 }
 
 h1 {
@@ -15,7 +14,6 @@ h1 {
 
 h2 {
   font-size: 2em;
-  height: 2.5em;
   margin-bottom: 1em;
   font-family: 'Belleza', serif;
 }
@@ -25,18 +23,35 @@ p {
   font-size: 1.5em;
 }
 
+@media only screen and (max-width: 768px) {
+  .values-item {
+    flex-direction: column!important;
+  }
+  .item {
+    width: 90%!important;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 2em;
+  }
+
+}
+
 .values-item {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  /*background: greenyellow;*/
   display: flex;
   flex-direction: row;
-  /*align-items: stretch;*/
   justify-content: space-around;
 }
 
 .item {
-  /*background: pink;*/
-  width: 25%;
-  margin: 2em;
+  width: 33%;
+  margin: 2em auto;
 }
