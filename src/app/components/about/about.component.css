@@ -2,7 +2,7 @@
   background-color: #00003d;
   text-align: center;
   align-items: center;
-  padding: 8em 6em;
+  padding: 6em 3em;
   max-width: 100%;
 }
 
@@ -18,5 +18,5 @@ h1 {
 p {
   text-align: center;
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 1.5em;
 }
