@@ -1,17 +1,11 @@
 .container-oportunities {
   background-image: url('src/assets/img/fondo/fondo.jpg');
-  background-size: 100% auto;
+  background-size: cover;
   max-width: 100%;
   text-align: center;
   align-items: center;
   padding: 4em 3em;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 768px) {
-  .container-oportunities {
-    background-size: auto 100%;
-  }
 }
 
 .text h1 {
