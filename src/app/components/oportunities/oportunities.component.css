@@ -8,6 +8,12 @@
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .container-oportunities {
+    background-size: auto 100%;
+  }
+}
+
 .text h1 {
   font-size: 2.5em;
   font-family: 'Belleza', sans-serif;
