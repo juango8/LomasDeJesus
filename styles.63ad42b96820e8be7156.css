@@ -8,4 +8,4 @@
 
 /*  !* Scroll Snap *!*/
 
-/*!* Section Images *!*/
+/*!* Section Images *!*/@media only screen and (max-device-width:480px){body{min-width:100%}}
