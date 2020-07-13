@@ -7,6 +7,8 @@
   max-width: 100%;
 }
 
+
+
 h1 {
   font-size: 55px;
   font-family: 'Belleza', serif;
@@ -52,4 +54,32 @@ p {
 .buttons {
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 20px;
+  }
+  #safe-place-content{
+    width: 320px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttonText {
+    /*margin-top: 0.4em;*/
+    font-size: 1.5em;
+    margin: 0 0;
+  }
+  .buttonLeft {
+    width: 80%;
+    height: 5em;
+  }
+  .buttonRight {
+    width: 80%;
+    height: 2.5em;
+  }
 }
