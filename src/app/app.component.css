@@ -1,9 +1,9 @@
 .container-scroll {
-  width: 100vw;
+  width: 100%;
   max-width: 2000px;
   height: 100%;
   /* CSS Smooth Scroll */
-  overflow-y: scroll;
+  overflow: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   margin: auto;
@@ -73,20 +73,9 @@ section h1 {
   height: auto;
 }
 
-/* Section Images */
-section#home {
-  background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;;
-}
-
-section#about {
-  background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;;
-}
-
-section#service {
-  background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;;
-}
-
-section#contact {
-  background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;;
+@media only screen and (max-device-width: 480px) {
+  .container-scroll{
+    max-width: 100%;
+  }
 }
 

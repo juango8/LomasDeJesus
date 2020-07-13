@@ -41,8 +41,18 @@
     font-size: .7em;
     margin-left: 2em;
     color: rgb(0, 0, 61);
+    margin-top: -2em;
 }
 
 .social-networks i {
     padding-right: 3%;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .social-networks p {
+        position: relative;
+        margin-top: 0em;
+        margin-left: 0em;
+        text-align: center;
+    }
 }
