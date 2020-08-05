@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//Rutas
+import { APP_ROUTING } from './app.routes';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NewsComponent } from './components/news/news.component';
@@ -16,6 +19,8 @@ import { SeaFriendsComponent } from './components/sea-friends/sea-friends.compon
 import { OpinionsComponent } from './components/opinions/opinions.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { PortalDeNoticiasComponent } from './pages/portal-de-noticias/portal-de-noticias.component';
+import { MainComponent } from './pages/main/main.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +39,13 @@ import { FooterComponent } from './shared/footer/footer.component';
     OpinionsComponent,
     SeaFriendsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    PortalDeNoticiasComponent,
+    MainComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]

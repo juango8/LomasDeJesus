@@ -56,13 +56,8 @@
 
 .wrapper {
     display: grid;
-    gap:10px;
-    grid-template: 
-    "a a a" auto
-    "c d b" auto/
-    auto auto 37%
-    ;
-
+    gap: 10px;
+    grid-template: "a a a" auto "c d b" auto/ auto auto 37%;
 }
 
 .box {
@@ -74,14 +69,13 @@
 
 .a {
     margin-left: -53%;
-    grid-area:a;
+    grid-area: a;
 }
 
 .textWithBlurredBg img {
     /*padding-left: 1em;*/
     width: 37.5em;
     height: 25em;
-    
 }
 
 .textWithBlurredBg {
@@ -137,7 +131,7 @@
 }
 
 .b {
-    grid-area:b;
+    grid-area: b;
 }
 
 .textb {
@@ -174,7 +168,7 @@
 }
 
 .c {
-    grid-area:c;
+    grid-area: c;
 }
 
 .c img {
@@ -192,7 +186,7 @@
 }
 
 .d {
-    grid-area:d;
+    grid-area: d;
 }
 
 .d img {
@@ -261,13 +255,8 @@
     }
     .wrapper {
         display: grid;
-        gap:10px;
-        grid-template: 
-            "a" 
-            "c"
-            "d"
-            "b" 
-    ;
+        gap: 10px;
+        grid-template: "a" "c" "d" "b";
     }
     .box {
         color: #fff;
@@ -281,21 +270,19 @@
         position: relative;
         transition: .3s;
     }
-
     .textWithBlurredBg img {
         /*padding-left: 1em;*/
         width: 100%;
-        height: 545px;   
+        height: 545px;
     }
     .textWithBlurredBg p {
         margin-left: 39%;
         font-size: 60%;
-        width:50%;
+        width: 50%;
         top: 25%;
         left: 4%;
         text-align: justify;
     }
-    
     .textWithBlurredBg h2 {
         font-size: 100% !important;
         margin-left: 39%;
@@ -303,7 +290,6 @@
         left: 4%;
         top: 15%;
     }
-    
     .textWithBlurredBg h1 {
         font-size: 120% !important;
         margin-left: 39%;
@@ -328,7 +314,6 @@
         width: 100%;
         height: 10em;
     }
-    
     .botond {
         width: 200px;
         height: 73px;
@@ -344,5 +329,4 @@
         margin-bottom: .4em;
         text-align: justify;
     }
-    
 }
