@@ -21,6 +21,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PortalDeNoticiasComponent } from './pages/portal-de-noticias/portal-de-noticias.component';
 import { MainComponent } from './pages/main/main.component';
+import { PortalNavbarComponent } from './pages/portal-de-noticias/components/portal-navbar/portal-navbar.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MainComponent } from './pages/main/main.component';
     ContactComponent,
     FooterComponent,
     PortalDeNoticiasComponent,
-    MainComponent
+    MainComponent,
+    PortalNavbarComponent
   ],
   imports: [
     BrowserModule,
