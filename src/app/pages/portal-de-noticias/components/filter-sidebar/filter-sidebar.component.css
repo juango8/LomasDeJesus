@@ -1,0 +1,63 @@
+.container
+{
+    margin-top: 0.05em;
+    display: block;
+    background-color:  rgba(0, 0, 61, 1);
+    color: white;
+    font-family: 'Amaranth', serif;
+    font-size: 1.3em;
+    width: 25%;
+}
+
+.sidebar{
+    padding: 1em 1em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h2 {
+    padding: 2em 0;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.by_date {
+    margin-top: 1em;
+}
+
+.by_date input{
+    border: 1px solid white;
+    width: 50%;
+    background-color:  rgba(0, 0, 61, 1);
+    color: white;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+textarea{
+    color: white;
+}
+
+#checkbox {
+    width: auto;
+}
+
+#search_bar {
+    border: 1px solid white;
+    width: 70%;
+    color: white;
+    background-color:  rgba(0, 0, 61, 1);
+}
+
+select {
+
+    border: 1px solid white;
+    width: 70%;
+    color: white;
+    background-color:  rgba(0, 0, 61, 1);
+
+}

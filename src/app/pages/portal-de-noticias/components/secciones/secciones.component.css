@@ -1,0 +1,20 @@
+.banner {
+    display: block;
+    background-color:  rgba(0, 0, 61, 1);
+    color: white;
+    font-family: 'Amaranth', serif;
+    font-size: 1.3em;
+}
+
+.title {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.6em;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 8em;
+}
+

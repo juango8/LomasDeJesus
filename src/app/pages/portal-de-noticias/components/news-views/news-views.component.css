@@ -1,0 +1,30 @@
+.container {
+    display: block;
+    position: relative;
+    top: -12em;
+    left: 27%;
+    border-top: 0.1em solid rgba(0, 0, 61, 1);
+    border-bottom: 0.1em solid rgba(0, 0, 61, 1);
+    width: 70%;
+    color: rgba(0, 0, 61, 1);
+    font-family: 'Amaranth', serif;
+    font-size: 1.3em;
+}
+
+.title {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.6em;
+}
+
+.news {
+    display: flex;
+    font-size: 2em;
+    color:rgba(0, 0, 61, 1) ;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+
+
+
