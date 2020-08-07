@@ -47,14 +47,12 @@ import { NewsViewsComponent } from './pages/portal-de-noticias/components/news-v
     FooterComponent,
     PortalDeNoticiasComponent,
     MainComponent,
-<<<<<<< HEAD
     PortalNavbarComponent,
     SeccionesComponent,
     FilterSidebarComponent,
     NewsViewsComponent
-=======
-    PortalNavbarComponent
->>>>>>> 9078c68e8105e2c8fec2f5c662a2ac8ff7476656
+
+
   ],
   imports: [
     BrowserModule,
