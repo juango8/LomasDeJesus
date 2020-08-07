@@ -21,6 +21,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PortalDeNoticiasComponent } from './pages/portal-de-noticias/portal-de-noticias.component';
 import { MainComponent } from './pages/main/main.component';
+import { PortalNavbarComponent } from './pages/portal-de-noticias/components/portal-navbar/portal-navbar.component';
+import { SeccionesComponent } from './pages/portal-de-noticias/components/secciones/secciones.component';
+import { FilterSidebarComponent } from './pages/portal-de-noticias/components/filter-sidebar/filter-sidebar.component';
+import { NewsViewsComponent } from './pages/portal-de-noticias/components/news-views/news-views.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { MainComponent } from './pages/main/main.component';
     ContactComponent,
     FooterComponent,
     PortalDeNoticiasComponent,
-    MainComponent
+    MainComponent,
+    PortalNavbarComponent,
+    SeccionesComponent,
+    FilterSidebarComponent,
+    NewsViewsComponent
   ],
   imports: [
     BrowserModule,

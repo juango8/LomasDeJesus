@@ -1,0 +1,20 @@
+.container-scroll {
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    margin: auto;
+}
+
+#news-views{
+    height: 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .container-scroll {
+        max-width: 100%;
+    }
+}
