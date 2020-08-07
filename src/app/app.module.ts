@@ -26,6 +26,7 @@ import { SeccionesComponent } from './pages/portal-de-noticias/components/seccio
 import { FilterSidebarComponent } from './pages/portal-de-noticias/components/filter-sidebar/filter-sidebar.component';
 import { NewsViewsComponent } from './pages/portal-de-noticias/components/news-views/news-views.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,10 +47,14 @@ import { NewsViewsComponent } from './pages/portal-de-noticias/components/news-v
     FooterComponent,
     PortalDeNoticiasComponent,
     MainComponent,
+<<<<<<< HEAD
     PortalNavbarComponent,
     SeccionesComponent,
     FilterSidebarComponent,
     NewsViewsComponent
+=======
+    PortalNavbarComponent
+>>>>>>> 9078c68e8105e2c8fec2f5c662a2ac8ff7476656
   ],
   imports: [
     BrowserModule,
