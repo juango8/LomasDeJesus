@@ -3,38 +3,14 @@
     <h1>NUESTROS SOCIOS OPINAN</h1>
   </div>
   <div class="values-item">
-    <div class="item">
-      <img src="assets/img/tipo.jpg" class="round-image">
-      <h2>Adrián Tejada, Socio Fundador</h2>
+    <div *ngFor="let opinion of opinions" class="item">
+      <img [src]="baseRoot+opinion.partner_photo" class="round-image">
+      <h2>{{opinion.partner_name}}, Socio Fundador</h2>
       <div class="item-text">
         <img src="assets/img/iconos/comillas.svg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quos, rem.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quos, rem.</p>
+        <p>{{opinion.text}}</p>
         <img src="assets/img/iconos/comillas.svg" style="transform: scaleX(-1); height: 1.5em">
       </div>
     </div>
-
-    <div class="item">
-      <img src="assets/img/tipo.jpg" class="round-image">
-      <h2>Adrián Tejada, Socio Fundador</h2>
-      <div class="item-text">
-        <img src="assets/img/iconos/comillas.svg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quos, rem.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quos, rem.</p>
-        <img src="assets/img/iconos/comillas.svg" style="transform: scaleX(-1); height: 1.5em">
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="assets/img/tipo.jpg" class="round-image">
-      <h2>Adrián Tejada, Socio Fundador</h2>
-      <div class="item-text">
-        <img src="assets/img/iconos/comillas.svg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quos, rem.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quos, rem.</p>
-        <img src="assets/img/iconos/comillas.svg" style="transform: scaleX(-1); height: 1.5em">
-      </div>
-    </div>
-
-
-    </div>
+  </div>
+</div>

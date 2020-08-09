@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-//Rutas
+// Rutas
 import { APP_ROUTING } from './app.routes';
 
 import { AppComponent } from './app.component';
@@ -25,6 +25,7 @@ import { PortalNavbarComponent } from './pages/portal-de-noticias/components/por
 import { SeccionesComponent } from './pages/portal-de-noticias/components/secciones/secciones.component';
 import { FilterSidebarComponent } from './pages/portal-de-noticias/components/filter-sidebar/filter-sidebar.component';
 import { NewsViewsComponent } from './pages/portal-de-noticias/components/news-views/news-views.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { NewsViewsComponent } from './pages/portal-de-noticias/components/news-v
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     APP_ROUTING
   ],
   providers: [],
