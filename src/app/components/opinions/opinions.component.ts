@@ -15,7 +15,7 @@ export class OpinionsComponent {
     this.opinion.getOpinions()
       .subscribe((data: any) => {
         this.opinions = data;
-        console.log(this.opinions);
+        // console.log(this.opinions);
       });
   }
 

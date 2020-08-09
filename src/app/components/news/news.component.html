@@ -13,13 +13,12 @@
         <div class="wrapper">
             <div class="box a">
                 <a class="textWithBlurredBg" href="#">
-                    <img alt="" src="assets/img/fondo/navbar.png">
-                    <h1>07 MAY</h1>
-                    <h2>NOTICIA I</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloribus ducimus fuga inventore ipsam laborum odio officia omnis optio quos, ratione tempore totam unde ut veritatis? Maxime quod suscipit temporibus. A architecto beatae
-                        consequatur cumque, dolor doloribus earum enim est excepturi explicabo iure laborum nihil provident reprehenderit sed similique ut voluptatibus. Aliquam consequatur eos harum nesciunt provident, sunt ullam unde? Adipisci alias
-                        aperiam at beatae commodi earum expedita fuga, nisi numquam perspiciatis possimus quam quidem recusandae sequi tenetur totam voluptate! Accusamus explicabo, modi nam neque officia placeat repellat sunt voluptatem.
-                    </p>
+                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_narrow">
+<!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
+<!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
+                    <h1>{{lastNews[0].date}}</h1>
+                    <h2>{{lastNews[0].title}}</h2>
+                    <p>{{lastNews[0].texto}}</p>
                 </a>
             </div>
             <div class="box b">
@@ -37,7 +36,14 @@
                         <br> DE NOTICIAS
                     </div>
                 </a>
-                <img src="assets/img/fondo/ave.jpg" alt="Girl in a jacket">
+              <a class="textWithBlurredBg" href="#">
+                <img alt="" [src]="baseRoot+lastNews[1].urlImage_narrow">
+                <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
+                <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
+                <h1>{{lastNews[1].date}}</h1>
+                <h2>{{lastNews[1].title}}</h2>
+                <p>{{lastNews[1].texto}}</p>
+              </a>
             </div>
             <div class="box d">
                 <div class="botond">
@@ -45,7 +51,14 @@
                         ¡HAZTE SOCIO!
                     </div>
                 </div>
-                <img alt="Girl in a jacket" src="assets/img/fondo/ave.jpg">
+              <a class="textWithBlurredBg" href="#">
+                <img alt="" [src]="baseRoot+lastNews[2].urlImage_narrow">
+                <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
+                <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
+                <h1>{{lastNews[2].date}}</h1>
+                <h2>{{lastNews[2].title}}</h2>
+                <p>{{lastNews[2].texto}}</p>
+              </a>
 
             </div>
         </div>
