@@ -7,6 +7,7 @@
     font-family: 'Amaranth', serif;
     font-size: 1.3em;
     width: 25%;
+    min-height: 50em;
 }
 
 .sidebar{
@@ -25,6 +26,10 @@ h2 {
 
 .by_date {
     margin-top: 1em;
+}
+
+#sort {
+    width: 70%;
 }
 
 .by_date input{
@@ -56,7 +61,7 @@ textarea{
 select {
 
     border: 1px solid white;
-    width: 70%;
+    width: 20%;
     color: white;
     background-color:  rgba(0, 0, 61, 1);
 

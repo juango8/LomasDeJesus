@@ -25,6 +25,11 @@
     padding: 0 1em;
 }
 
+li {
+    width: 22%;
+    overflow: hidden;
+}
+
 
 
 

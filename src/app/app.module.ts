@@ -26,6 +26,8 @@ import { SeccionesComponent } from './pages/portal-de-noticias/components/seccio
 import { FilterSidebarComponent } from './pages/portal-de-noticias/components/filter-sidebar/filter-sidebar.component';
 import { NewsViewsComponent } from './pages/portal-de-noticias/components/news-views/news-views.component';
 import {HttpClientModule} from '@angular/common/http';
+import { NewsTemplateComponent } from './pages/portal-de-noticias/components/news-template/news-template.component';
+import { DisplayNewsComponent } from './pages/portal-de-noticias/components/display-news/display-news.component';
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import {HttpClientModule} from '@angular/common/http';
     PortalNavbarComponent,
     SeccionesComponent,
     FilterSidebarComponent,
-    NewsViewsComponent
+    NewsViewsComponent,
+    NewsTemplateComponent,
+    DisplayNewsComponent
 
 
   ],

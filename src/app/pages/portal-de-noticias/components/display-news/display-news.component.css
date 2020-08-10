@@ -1,0 +1,8 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    left: 27%;
+    width: 70%;
+    bottom: 63em;
+  }
