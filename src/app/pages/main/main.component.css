@@ -9,6 +9,10 @@
     margin: auto;
 }
 
+#sea-friends{
+  background-color: #03989E;
+}
+
 .section {
     display: flex;
     flex-direction: column;

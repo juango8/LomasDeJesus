@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
+import {GalleryService} from '../../../services/gallery.service';
 
 @Component({
   selector: 'app-social',
   templateUrl: './social.component.html',
   styleUrls: ['./social.component.css']
 })
-export class SocialComponent implements OnInit {
+export class SocialComponent implements AfterViewInit{
 
-  constructor() { }
+  socialImages: any[] = [];
+  baseRoot = 'http://54.160.110.125:8000/api';
 
-  ngOnInit(): void {
+  constructor(private images: GalleryService) {
+    this.images.getImages()
+      .subscribe( (data: any) => {
+        // console.log(data);
+        this.socialImages = data.galleries[2].images;
+      });
+  }
+
+  ngAfterViewInit(){
+
   }
 
 }

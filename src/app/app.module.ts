@@ -28,6 +28,7 @@ import { NewsViewsComponent } from './pages/portal-de-noticias/components/news-v
 import {HttpClientModule} from '@angular/common/http';
 import { NewsTemplateComponent } from './pages/portal-de-noticias/components/news-template/news-template.component';
 import { DisplayNewsComponent } from './pages/portal-de-noticias/components/display-news/display-news.component';
+import { WorkingComponent } from './pages/working/working.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { DisplayNewsComponent } from './pages/portal-de-noticias/components/disp
     FilterSidebarComponent,
     NewsViewsComponent,
     NewsTemplateComponent,
-    DisplayNewsComponent
+    DisplayNewsComponent,
+    WorkingComponent
 
 
   ],

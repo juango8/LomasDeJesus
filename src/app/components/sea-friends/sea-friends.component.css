@@ -9,7 +9,7 @@
 
 
 #sea-friends-content {
-  padding: 0 12em;
+  padding: 0 15em;
 }
 
 h1 {
@@ -36,6 +36,9 @@ p {
   align-items: center;
   flex-direction: column;
   margin: auto;
+}
+.buttonRight .buttonText{
+  margin-top: 1em;
 }
 
 .buttonLeft, .buttonRight {

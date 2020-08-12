@@ -20,9 +20,19 @@ export class NewsComponent {
     this.news.getLastThree()
       .subscribe((data: any) => {
         this.lastNews = data;
-        console.log('test');
-        console.log(this.lastNews);
+        // console.log(this.lastNews);
+        console.log(this.lastNews[1].texto.length);
       });
+  }
+
+  maxLenght(x, index){
+    // const index = 218;
+    if (x.length > index) {
+      return x.substring(0, index) + ' ...';
+    }
+    else {
+      return x;
+    }
   }
 
 }
