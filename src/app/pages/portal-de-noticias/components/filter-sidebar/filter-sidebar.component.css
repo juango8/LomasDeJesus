@@ -66,3 +66,13 @@ select {
     background-color:  rgba(0, 0, 61, 1);
 
 }
+
+@media only screen and (max-device-width: 480px) {
+    .container
+{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+}

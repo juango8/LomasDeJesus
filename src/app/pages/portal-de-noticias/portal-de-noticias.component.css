@@ -7,14 +7,17 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     margin: auto;
+    max-height: fit-content;
 }
 
 .h-0{
     height: 0;
 }
 
+
 @media only screen and (max-device-width: 480px) {
     .container-scroll {
         max-width: 100%;
+        overflow-y: visible;
     }
 }

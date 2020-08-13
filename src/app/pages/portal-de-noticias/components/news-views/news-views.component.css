@@ -31,5 +31,12 @@ li {
 }
 
 
-
+@media only screen and (max-device-width: 480px) {
+    .container
+{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+}
 

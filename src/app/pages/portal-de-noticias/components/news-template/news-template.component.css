@@ -35,3 +35,32 @@ img {
     color: #03989E;
     cursor: pointer;
 }
+
+  
+@media only screen and (max-device-width: 480px) {
+
+    .container {
+        font-family: 'Amaranth', serif;
+        font-size: 1.3em;
+        max-height: none;
+        display: inline;
+        color: white;
+    }
+
+    img {
+        width: 75%;
+        margin: 1em 2em;
+        padding: 0;
+        border: 0.5em solid #03989E;
+    }
+
+    .botonb,p{
+        visibility: hidden;
+        max-height: 0;
+    }
+
+    .text{
+        padding: 0em 2em;
+    }
+
+}

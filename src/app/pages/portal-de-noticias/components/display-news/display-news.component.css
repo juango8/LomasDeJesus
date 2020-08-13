@@ -6,3 +6,16 @@
     width: 70%;
     bottom: 63em;
   }
+
+
+  
+  @media only screen and (max-device-width: 480px) {
+    .grid-container
+{
+  display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 61, 1);
+}
+}

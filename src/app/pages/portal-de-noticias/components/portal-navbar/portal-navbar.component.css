@@ -114,3 +114,232 @@ ul li ul li a {
     left: 3%;
     top: 0;
 }
+
+/* RECURSOS MOBILES */
+
+.menu-toggle {
+    margin-left: 12em;
+    display: none;
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(19, 97, 143);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburger,
+.cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hamburger span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hamburger span:last-child {
+    margin: 0;
+}
+
+.hamburger span:before,
+.hamburger span:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(19, 97, 143);
+    transform: translateX(-200%);
+    transition: transform ease 300ms;
+}
+
+.hamburger span:after {
+    transform: translateX(0);
+}
+
+.hamburger span:nth-child(2):before,
+.hamburger span:nth-child(2):after {
+    transition-delay: 75ms;
+}
+
+.hamburger span:last-child:before,
+.hamburger span:last-child:after {
+    transition-delay: 150ms;
+}
+
+.menu-toggle:hover .hamburger span:before {
+    transform: translateX(0);
+}
+
+.menu-toggle:hover .hamburger span:after {
+    transform: translateX(200%);
+}
+
+.menu-toggle.active .hamburger span:before {
+    transform: translateX(100%);
+}
+
+.menu-toggle.active .hamburger span:after {
+    transform: translateX(200%);
+}
+
+.cross span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: rgb(19, 97, 143);
+    transform: translateY(50%) rotate(45deg) scaleX(0);
+    transition: transform ease 200ms;
+}
+
+.cross span:last-child {
+    transform: translateY(-50%) rotate(-45deg) scaleX(0);
+}
+
+.menu-toggle.active .cross span {
+    transition-delay: 450ms;
+    transform: translateY(50%) rotate(45deg) scaleX(1);
+}
+
+.menu-toggle.active .cross span:last-child {
+    transform: translateY(-50%) rotate(-45deg) scaleX(1);
+}
+
+
+/* TEST */
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-transform: uppercase;
+    font-family: 'Alegreya', serif;
+    text-decoration: none;
+    color: rgb(0, 0, 61);
+    transition: color 0.5s ease;
+}
+
+#menuToggle a:hover {
+    color: #03989E;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgb(0, 0, 61);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: rgb(0, 0, 61);
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    margin: -100px 0 0 -450px;
+    padding: 50px;
+    padding-top: 125px;
+    background: white;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    border-bottom: 2px solid rgb(0, 0, 61);
+    padding: 10px 0;
+    margin-left: 120px;
+    font-size: 22px;
+}
+
+
+/*
+* And let's slide it in from the left
+*/
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+.mobile-navigation {
+    visibility: hidden;
+}
+
+@media only screen and (max-device-width: 480px) {
+    nav.primary-navigation {
+        display: flex;
+    }
+    nav.primary-navigation ul {
+        display: none;
+    }
+    nav.mobile-navigation {
+        visibility: initial;
+        display: initial;
+    }
+    .imagen {
+        left: 1em;
+    }
+    .menu-toggle {
+        display: initial;
+    }
+}

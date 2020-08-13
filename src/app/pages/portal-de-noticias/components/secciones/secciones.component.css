@@ -18,3 +18,11 @@
     padding: 1em 8em;
 }
 
+@media only screen and (max-device-width: 480px) {
+    .banner
+{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+}
