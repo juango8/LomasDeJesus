@@ -1,9 +1,6 @@
 <div class="banner">
     <div class="title"><h1>PORTAL DE NOTICIAS</h1></div>
     <div  class="list">
-            <div>Deportiva</div>
-            <div>Tecnología</div>
-            <div>Medio Ambiente</div>
-            <div>Sociedad</div> 
+            <div *ngFor="let sect of sections">{{sect.name}}</div>
     </div>
 </div>

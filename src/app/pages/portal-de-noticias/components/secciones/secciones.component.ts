@@ -1,15 +1,35 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {SectionsService} from '../../../../services/sections.service';
+import {SpecificSectionService} from '../../../../services/specific-section.service';
 
 @Component({
   selector: 'app-secciones',
   templateUrl: './secciones.component.html',
   styleUrls: ['./secciones.component.css']
 })
-export class SeccionesComponent implements OnInit {
+export class SeccionesComponent {
 
-  constructor() { }
+  sections: any[] = [];
+  specificSection: any[];
 
-  ngOnInit(): void {
+
+  constructor(private section: SectionsService) {
+    this.section.getSections()
+      .subscribe((data: any) => {
+        this.sections = data;
+        console.log(this.sections);
+      });
   }
 
+  // onClickMe(sect: any) {
+  //   let id: string;
+  //   id = sect;
+  //   let sectio: SectionsService;
+  //   this.specificSection = [];
+  //   sectio.getSections()
+  //     .subscribe((data: any) => {
+  //       this.sections = data;
+  //       console.log(this.sections);
+  //     });
+  // }
 }
