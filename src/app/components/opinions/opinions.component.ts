@@ -9,7 +9,7 @@ import {OpinionsService} from '../../services/opinions.service';
 export class OpinionsComponent {
 
   opinions: any[] = [];
-  baseRoot = 'http://54.160.110.125:8000/api';
+  baseRoot = 'https://admin.lomasdejesus.com';
 
   constructor(private opinion: OpinionsService) {
     this.opinion.getOpinions()

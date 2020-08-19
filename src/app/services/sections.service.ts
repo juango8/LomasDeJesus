@@ -10,6 +10,6 @@ export class SectionsService {
   }
 
   getSections() {
-    return this.http.get('http://54.160.110.125:8000/api/news/categories/');
+    return this.http.get('https://admin.lomasdejesus.com/news/categories/');
   }
 }

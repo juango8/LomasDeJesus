@@ -14,7 +14,7 @@ export class PortalDeNoticiasComponent {
   news: any[] = [];
   statePanel = true;
   detail: Detail;
-  baseRoot = 'http://54.160.110.125:8000/api';
+  baseRoot = 'https://admin.lomasdejesus.com';
   title: string;
   date: string;
   texto: string;
@@ -40,7 +40,7 @@ export class PortalDeNoticiasComponent {
 
   getSectionId(value: any) {
     this.statePanel = true;
-    this.http.get('http://54.160.110.125:8000/api/news/list/by_category/' + value).subscribe(
+    this.http.get('https://admin.lomasdejesus.com/news/list/by_category/' + value).subscribe(
       (response: any) => {
         this.news = response;
       });
@@ -81,7 +81,7 @@ export class PortalDeNoticiasComponent {
 
   filtering() {
     this.statePanel = true;
-    this.http.post<any>('http://54.160.110.125:8000/api/news/filter/', {
+    this.http.post<any>('https://admin.lomasdejesus.com/news/filter/', {
       text: this.searchBar,
       year: this.year,
       month: this.month,

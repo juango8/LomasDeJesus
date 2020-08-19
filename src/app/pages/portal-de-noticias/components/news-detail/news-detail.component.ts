@@ -11,7 +11,7 @@ export class NewsDetailComponent implements OnInit {
   id: any;
   detail: Detail;
   private sub: any;
-  private baseRoot = 'http://54.160.110.125:8000/api';
+  private baseRoot = 'https://admin.lomasdejesus.com';
   title: string;
   date: string;
   texto: string;

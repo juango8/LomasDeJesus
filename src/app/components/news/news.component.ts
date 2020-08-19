@@ -14,7 +14,7 @@ export class NewsComponent {
   texto4 = `AMISTAD`;
 
   lastNews: any[] = [];
-  baseRoot = 'http://54.160.110.125:8000/api';
+  baseRoot = 'https://admin.lomasdejesus.com';
 
   constructor(private news: LastThreeService) {
     this.news.getLastThree()

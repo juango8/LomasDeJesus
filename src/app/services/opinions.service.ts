@@ -10,7 +10,7 @@ export class OpinionsService {
   }
 
   getOpinions() {
-    return this.http.get('http://54.160.110.125:8000/api/partners/opinions/');
+    return this.http.get('https://admin.lomasdejesus.com/partners/opinions/');
   }
 }
 

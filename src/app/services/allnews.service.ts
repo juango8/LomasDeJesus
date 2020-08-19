@@ -10,6 +10,6 @@ export class AllnewsService {
   }
 
   getNews() {
-    return this.http.get('http://54.160.110.125:8000/api/news/list/');
+    return this.http.get('https://admin.lomasdejesus.com/news/list/');
   }
 }

@@ -11,6 +11,6 @@ export class GalleryService {
   }
 
   getImages() {
-    return this.http.get('http://54.160.110.125:8000/api/galleries/list/images');
+    return this.http.get('https://admin.lomasdejesus.com/galleries/list/images');
   }
 }

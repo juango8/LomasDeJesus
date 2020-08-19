@@ -10,7 +10,7 @@ export class SpecificSectionService {
   }
 
   getSpecificSection(id: string) {
-    console.log('http://54.160.110.125:8000/api/news/list/by_category/' + id);
-    return this.http.get('http://54.160.110.125:8000/api/news/list/by_category/' + id);
+    console.log('https://admin.lomasdejesus.com/news/list/by_category/' + id);
+    return this.http.get('https://admin.lomasdejesus.com/news/list/by_category/' + id);
   }
 }

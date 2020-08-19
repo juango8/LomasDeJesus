@@ -9,7 +9,7 @@ import {GalleryService} from '../../../services/gallery.service';
 export class NatureComponent {
 
   natureImages: any[] = [];
-  baseRoot = 'http://54.160.110.125:8000/api';
+  baseRoot = 'https://admin.lomasdejesus.com';
 
   constructor(private images: GalleryService) {
     this.images.getImages()
