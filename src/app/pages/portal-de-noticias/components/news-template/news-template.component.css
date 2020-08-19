@@ -1,66 +1,67 @@
 .container {
-    font-family: 'Amaranth', serif;
-    font-size: 1.3em;
-    width: 100%;
-    color: rgba(0, 0, 61, 1);
-    display: flex;
-    max-height: 17em;
+  font-family: 'Amaranth', serif;
+  font-size: 1.3em;
+  width: 100%;
+  color: rgba(0, 0, 61, 1);
+  display: flex;
+  max-height: 17em;
 }
 
-p{
-    overflow: hidden;
-    max-height: 3.5em;
+.text p {
+  overflow: hidden;
+  max-height: 3.5em;
 
 }
-img {
-    width: 50%;
-    padding: 2em 0;
+
+.container img {
+  width: 50%;
+  padding: 2em 0;
 }
 
-.text{
-    padding: 2em 1em;
+.text {
+  padding: 2em 1em;
 }
 
-.botonb{
-    text-align: right;
+.botonb {
+  text-align: right;
 }
 
-.botonb > b{
-    font-size: 1em;
-    margin-right: 0.2em;
-    
+.botonb > b {
+  font-size: 1em;
+  margin-right: 0.2em;
+
 }
 
 .botonb:hover {
-    color: #03989E;
-    cursor: pointer;
+  color: #03989E;
+  cursor: pointer;
 }
 
-  
+
 @media only screen and (max-device-width: 480px) {
 
-    .container {
-        font-family: 'Amaranth', serif;
-        font-size: 1.3em;
-        max-height: none;
-        display: inline;
-        color: white;
-    }
+  .container {
+    font-family: 'Amaranth', serif;
+    font-size: 1.3em;
+    max-height: none;
+    display: inline;
+    color: white;
+  }
 
-    img {
-        width: 75%;
-        margin: 1em 2em;
-        padding: 0;
-        border: 0.5em solid #03989E;
-    }
+  .container img {
+    width: 75%;
+    margin: 1em 2em;
+    padding: 0;
+    border: 0.5em solid #03989E;
+  }
 
-    .botonb,p{
-        visibility: hidden;
-        max-height: 0;
-    }
+  .botonb, .text p {
+    visibility: hidden;
+    max-height: 0;
+  }
 
-    .text{
-        padding: 0em 2em;
-    }
+  .text {
+    padding: 0em 2em;
+  }
 
 }

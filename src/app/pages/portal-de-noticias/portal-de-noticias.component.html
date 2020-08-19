@@ -1,12 +1,33 @@
-
 <div class="container-scroll">
-<app-portal-navbar></app-portal-navbar>
-<app-secciones></app-secciones>
-<app-filter-sidebar></app-filter-sidebar>
-<div class="h-0">
-<app-display-news></app-display-news>
-</div>
-<div class="h-0">
-<app-news-views></app-news-views>
-</div>
+  <app-portal-navbar></app-portal-navbar>
+
+  <div class="banner">
+    <div class="title"><h1>PORTAL DE NOTICIAS</h1></div>
+    <div class="list">
+      <div (click)="getSectionId(sect.id)" *ngFor="let sect of sections">{{sect.name}}</div>
+    </div>
+  </div>
+
+  <app-filter-sidebar></app-filter-sidebar>
+  <div class="h-0">
+    <div class="grid-container">
+      <div *ngFor="let post of news" class="grid-item">
+        <div class="container">
+          <img [src]="baseRoot+post.urlImage_medium" alt="ImageNews">
+          <div class="text">
+            <h1>{{post.date}}</h1>
+            <h2>{{post.title}}</h2>
+            <p>{{maxLenght(post.texto)}}</p>
+            <div class="botonb">
+              <b [routerLink]="['/noticias', post.id]"> Seguir leyendo</b> <i class="fas fa-greater-than icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="h-0">
+    <app-news-views></app-news-views>
+  </div>
 </div>

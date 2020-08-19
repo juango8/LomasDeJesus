@@ -1,23 +1,130 @@
 .container-scroll {
-    width: 100%;
-    max-width: 2000px;
-    height: 100%;
-    /* CSS Smooth Scroll */
-    overflow: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    margin: auto;
-    max-height: fit-content;
+  width: 100%;
+  max-width: 2000px;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  margin: auto;
+  max-height: fit-content;
 }
 
-.h-0{
-    height: 0;
+.h-0 {
+  height: 0;
 }
 
+.banner {
+  display: block;
+  background-color: rgba(0, 0, 61, 1);
+  color: white;
+  font-family: 'Amaranth', serif;
+  font-size: 1.3em;
+}
+
+.title {
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.6em;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 8em;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  left: 27%;
+  width: 70%;
+  bottom: 63em;
+}
+
+.container {
+  font-family: 'Amaranth', serif;
+  font-size: 1.3em;
+  width: 100%;
+  color: rgba(0, 0, 61, 1);
+  display: flex;
+  max-height: 17em;
+}
+
+.text p {
+  overflow: hidden;
+  max-height: 3.5em;
+
+}
+
+.container img {
+  width: 50%;
+  padding: 2em 0;
+}
+
+.text {
+  padding: 2em 1em;
+}
+
+.botonb {
+  text-align: right;
+}
+
+.botonb > b {
+  font-size: 1em;
+  margin-right: 0.2em;
+
+}
+
+.botonb:hover {
+  color: #03989E;
+  cursor: pointer;
+}
 
 @media only screen and (max-device-width: 480px) {
-    .container-scroll {
-        max-width: 100%;
-        overflow-y: visible;
-    }
+  .banner {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .container-scroll {
+    max-width: 100%;
+    overflow-y: visible;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 61, 1);
+  }
+
+  .container {
+    font-family: 'Amaranth', serif;
+    font-size: 1.3em;
+    max-height: none;
+    display: inline;
+    color: white;
+  }
+
+  .container img {
+    width: 75%;
+    margin: 1em 2em;
+    padding: 0;
+    border: 0.5em solid #03989E;
+  }
+
+  .botonb, .text p {
+    visibility: hidden;
+    max-height: 0;
+  }
+
+  .text {
+    padding: 0 2em;
+  }
+
 }

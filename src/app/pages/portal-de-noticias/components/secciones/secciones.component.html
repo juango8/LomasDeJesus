@@ -1,6 +1,6 @@
 <div class="banner">
     <div class="title"><h1>PORTAL DE NOTICIAS</h1></div>
     <div  class="list">
-            <div *ngFor="let sect of sections">{{sect.name}}</div>
+            <div (click)="onClickMe(sect.id)" *ngFor="let sect of sections">{{sect.name}}</div>
     </div>
 </div>

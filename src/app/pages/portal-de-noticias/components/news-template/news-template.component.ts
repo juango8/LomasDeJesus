@@ -5,11 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './news-template.component.html',
   styleUrls: ['./news-template.component.css']
 })
-export class NewsTemplateComponent implements OnInit {
+export class NewsTemplateComponent {
+
+  Date: string;
+  Title: string;
+  Description: string;
+
 
   constructor() { }
 
-  ngOnInit(): void {
+  maxLenght(x){
+    const index = 200;
+    if (x.length > index) {
+      return x.substring(0, index) + ' ...';
+    }
+    else {
+      return x;
+    }
   }
 
 }

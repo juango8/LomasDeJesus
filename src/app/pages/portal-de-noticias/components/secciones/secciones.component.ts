@@ -21,15 +21,15 @@ export class SeccionesComponent {
       });
   }
 
-  // onClickMe(sect: any) {
-  //   let id: string;
-  //   id = sect;
-  //   let sectio: SectionsService;
-  //   this.specificSection = [];
-  //   sectio.getSections()
-  //     .subscribe((data: any) => {
-  //       this.sections = data;
-  //       console.log(this.sections);
-  //     });
-  // }
+  onClickMe(sect: any) {
+    let id: string;
+    id = sect;
+    let sectio: SpecificSectionService;
+    this.specificSection = [];
+    sectio.getSpecificSection(id)
+      .subscribe((data: any) => {
+        this.sections = data;
+        console.log(this.sections);
+      });
+  }
 }
