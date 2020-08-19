@@ -10,7 +10,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class PortalDeNoticiasComponent {
 
-  sections: any[] = [];
+  sections: Section[] = [];
   news: any[] = [];
   statePanel = true;
   detail: Detail;
@@ -20,6 +20,9 @@ export class PortalDeNoticiasComponent {
   texto: string;
   urlImageWide: string;
   urlImageMedium: string;
+  searchBar = '';
+  month = '';
+  year = '';
 
   constructor(private section: SectionsService, private mnew: AllnewsService, private http: HttpClient) {
     this.section.getSections()
@@ -64,6 +67,31 @@ export class PortalDeNoticiasComponent {
       return x;
     }
   }
+
+  getCategories(){
+    const a: any[] = [];
+    for (let i = 0; i < this.sections.length; i++) {
+      if (this.sections[i].status === true) {
+        a.push(this.sections[i].id);
+      }
+    }
+    console.log(a);
+    return a;
+  }
+
+  filtering() {
+    this.statePanel = true;
+    this.http.post<any>('http://54.160.110.125:8000/api/news/filter/', {
+      text: this.searchBar,
+      year: this.year,
+      month: this.month,
+      categories: this.getCategories()
+    })
+      .subscribe(data => {
+        console.log(data);
+        this.news = data;
+    });
+  }
 }
 
 interface Detail {
@@ -76,4 +104,10 @@ interface Detail {
   views: number;
   date: string;
   category: number;
+}
+
+interface Section {
+  id: number;
+  name: string;
+  status: boolean;
 }

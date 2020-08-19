@@ -72,6 +72,7 @@
   text-align: right;
   font-family: 'Amaranth', serif;
 }
+
 .detail-new h1 {
   /*line-height: 2em;*/
   font-size: 2.5em;
@@ -85,7 +86,7 @@
   margin-bottom: 2em;
 }
 
-.detail-new img{
+.detail-new img {
   height: 20em;
   display: block;
   margin: auto;
@@ -108,6 +109,74 @@
 .botonb:hover {
   color: #03989E;
   cursor: pointer;
+}
+
+.container-filter {
+  margin-top: 0.05em;
+  display: block;
+  background-color: rgba(0, 0, 61, 1);
+  color: white;
+  font-family: 'Amaranth', serif;
+  font-size: 1.3em;
+  width: 25%;
+  min-height: 50em;
+}
+
+.sidebar {
+  padding: 1em 1em;
+}
+
+.sidebar h3 {
+  font-size: 1.1em;
+}
+
+.sidebar h2 {
+  padding: 2em 0;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.by_date {
+  margin-top: 1em;
+}
+
+#sort {
+  width: 70%;
+}
+
+.by_date input {
+  border: 1px solid white;
+  width: 50%;
+  background-color: rgba(0, 0, 61, 1);
+  color: white;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+textarea {
+  color: white;
+}
+
+#checkbox {
+  width: auto;
+}
+
+#search_bar {
+  border: 1px solid white;
+  width: 70%;
+  color: white;
+  background-color: rgba(0, 0, 61, 1);
+}
+
+select {
+
+  border: 1px solid white;
+  width: 20%;
+  color: white;
+  background-color: rgba(0, 0, 61, 1);
+
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -154,4 +223,9 @@
     padding: 0 2em;
   }
 
+  .container-filter {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
 }

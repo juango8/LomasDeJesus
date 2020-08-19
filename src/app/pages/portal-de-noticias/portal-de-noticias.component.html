@@ -8,7 +8,65 @@
     </div>
   </div>
 
-  <app-filter-sidebar></app-filter-sidebar>
+  <div class="container-filter">
+    <div class="sidebar">
+      <form (submit)="filtering()">
+        <label for="search_bar"><i class="fas fa-search"></i></label>
+        <input [(ngModel)]="searchBar" id="search_bar" name="search_bar" type="search">
+
+        <div class="by_date">
+          <h3>BUSCAR POR FECHA</h3>
+          <label for="anho">Año</label><select [(ngModel)]="year" id="anho" name="anho">
+          <option value="2020">2020</option>
+        </select><br>
+          <label for="mes">Mes</label><select [(ngModel)]="month" id="mes" name="mes">
+          <option value="1">Enero</option>
+          <option value="2">Febrero</option>
+          <option value="3">Marzo</option>
+          <option value="4">Abril</option>
+          <option value="5">Mayo</option>
+          <option value="6">Junio</option>
+          <option value="7">Julio</option>
+          <option value="8">Agosto</option>
+          <option value="9">Septiembre</option>
+          <option value="10">Ocbtubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Diciembre</option>
+        </select>
+
+        </div>
+
+        <div class="by_date">
+          <h3>SECCIÓN</h3>
+
+          <div *ngFor="let sect of sections">
+            <label for="checkbox"><input id="checkbox"
+                                         type="checkbox"
+                                         name="categories"
+                                         value="{{sect.id}}"
+                                         [(ngModel)]="sect.status"> {{sect.name}}</label><br>
+          </div>
+        </div>
+
+<!--        <div class="by_date">-->
+
+<!--          <label for="sort"><h3>ORDERNAR POR</h3>-->
+<!--          </label><select [(ngModel)]="sort" id="sort" name="sort">-->
+<!--            <option value="volvo">Más Vistas</option>-->
+<!--            <option value="saab">Fecha</option>-->
+<!--          </select>-->
+
+<!--        </div>-->
+
+
+        <button type="submit">BUSCAR</button>
+      </form>
+    </div>
+    <div class="imagen">
+      <img alt="promo" src="assets/img/promo.png" width="100%">
+    </div>
+  </div>
+
 
   <div *ngIf="statePanel">
     <div class="h-0">
@@ -33,7 +91,7 @@
       <app-news-views></app-news-views>
     </div>
   </div>
-  <div class="h-0" *ngIf="!statePanel">
+  <div *ngIf="!statePanel" class="h-0">
     <div class="grid-container">
       <div class="detail-new">
         <h2>{{date}}</h2>

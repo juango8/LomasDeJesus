@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+
 // Rutas
 import { APP_ROUTING } from './app.routes';
 
@@ -66,6 +68,7 @@ import { NewsDetailComponent } from './pages/portal-de-noticias/components/news-
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     APP_ROUTING
   ],
   providers: [],
