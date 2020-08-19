@@ -64,6 +64,33 @@
   padding: 2em 0;
 }
 
+.detail-new {
+  height: fit-content;
+}
+
+.detail-new h2 {
+  text-align: right;
+  font-family: 'Amaranth', serif;
+}
+.detail-new h1 {
+  /*line-height: 2em;*/
+  font-size: 2.5em;
+  margin-top: 1em;
+  font-family: 'Amaranth', serif;
+}
+
+.detail-new p {
+  font-size: 1em;
+  font-family: 'Amaranth', serif;
+  margin-bottom: 2em;
+}
+
+.detail-new img{
+  height: 20em;
+  display: block;
+  margin: auto;
+}
+
 .text {
   padding: 2em 1em;
 }

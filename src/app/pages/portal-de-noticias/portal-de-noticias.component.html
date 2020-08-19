@@ -9,25 +9,39 @@
   </div>
 
   <app-filter-sidebar></app-filter-sidebar>
-  <div class="h-0">
-    <div class="grid-container">
-      <div *ngFor="let post of news" class="grid-item">
-        <div class="container">
-          <img [src]="baseRoot+post.urlImage_medium" alt="ImageNews">
-          <div class="text">
-            <h1>{{post.date}}</h1>
-            <h2>{{post.title}}</h2>
-            <p>{{maxLenght(post.texto)}}</p>
-            <div class="botonb">
-              <b [routerLink]="['/noticias', post.id]"> Seguir leyendo</b> <i class="fas fa-greater-than icon"></i>
+
+  <div *ngIf="statePanel">
+    <div class="h-0">
+      <div class="grid-container">
+        <div *ngFor="let post of news" class="grid-item">
+          <div class="container">
+            <img [src]="baseRoot+post.urlImage_medium" alt="ImageNews">
+            <div class="text">
+              <h1>{{post.date}}</h1>
+              <h2>{{post.title}}</h2>
+              <p>{{maxLenght(post.texto)}}</p>
+              <div class="botonb">
+                <b (click)="getDetail(post.id)"> Seguir leyendo</b> <i class="fas fa-greater-than icon"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
+    <div class="h-0">
+      <app-news-views></app-news-views>
+    </div>
   </div>
-  <div class="h-0">
-    <app-news-views></app-news-views>
+  <div class="h-0" *ngIf="!statePanel">
+    <div class="grid-container">
+      <div class="detail-new">
+        <h2>{{date}}</h2>
+        <img [src]="urlImageWide" alt="ImageNews01">
+        <h1>{{title}}</h1>
+        <p>{{texto}}</p>
+        <img [src]="urlImageMedium" alt="ImageNews02"></div>
+    </div>
   </div>
+
 </div>
