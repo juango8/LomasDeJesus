@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SectionsService} from '../../services/sections.service';
+import { NewsService } from '../../services/news.service';
 import {AllnewsService} from '../../services/allnews.service';
 import {HttpClient} from '@angular/common/http';
 
@@ -16,15 +17,25 @@ export class PortalDeNoticiasComponent {
   detail: Detail;
   baseRoot = 'https://admin.lomasdejesus.com';
   title: string;
-  date: string;
+  date: string;  
   texto: string;
   urlImageWide: string;
   urlImageMedium: string;
   searchBar = '';
   month = '';
   year = '';
+  public idDesdeHome:number;
 
-  constructor(private section: SectionsService, private mnew: AllnewsService, private http: HttpClient) {
+  constructor(private section: SectionsService, 
+              private mnew: AllnewsService, 
+              private _newsService: NewsService,
+              private http: HttpClient) {
+
+    
+    this.idDesdeHome = this._newsService.getNewsId();
+    if(this.idDesdeHome!=null){
+      this.getDetail(this.idDesdeHome);
+    }
     this.section.getSections()
       .subscribe((data: any) => {
         this.sections = data;

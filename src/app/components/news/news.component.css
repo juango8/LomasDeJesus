@@ -54,6 +54,10 @@
     position: relative;
 }
 
+.newscontent {
+    cursor: pointer;
+}
+
 .wrapper {
     display: grid;
     gap: 10px;
@@ -116,8 +120,8 @@
     text-align: left;
     left: 4%;
     top: 17%;
-  right: 4%;
-  line-height: 90%;
+    right: 4%;
+    line-height: 90%;
 }
 
 .textWithBlurredBg h1 {

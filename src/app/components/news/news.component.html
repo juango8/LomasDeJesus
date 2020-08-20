@@ -1,73 +1,79 @@
 <div class="contenido">
-  <div class="container-banner">
-    <div class="banner-noticias">
-      <div class="subsubtexto">
-        <h1>{{texto1}}</h1>
-        <h2>{{texto2}}</h2>
-        <p>{{texto3}}</p>
-        <p>{{texto4}}</p>
-      </div>
-    </div>
-  </div>
-  <div class="container-grid">
-    <div class="wrapper">
-      <div class="box a">
-        <a class="textWithBlurredBg" href="#">
-          <img [src]="baseRoot+lastNews[0].urlImage_narrow" alt="">
-          <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
-          <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
-          <h1>{{lastNews[0].date}}</h1>
-          <h2>{{lastNews[0].title}}</h2>
-          <p>{{maxLenght(lastNews[1].texto, 800)}}</p>
-        </a>
-      </div>
-      <div class="box b">
-        <div class="textb">
-          En Lomas de Jesús Casa Club puedes adquirir un terreno único para construir tu casa soñada.
-          <div class="botonb" id="inline">
-            <b> ENCUENTRA TU TERRENO IDEAL</b> <i class="fas fa-greater-than icon"></i>
-          </div>
-        </div>
-      </div>
-      <div class="box c">
-        <a [routerLink]="['/portal-de-noticias']">
-          <div class="botonc">
-            VER PORTAL
-            <br> DE NOTICIAS
-          </div>
-        </a>
-        <a class="textWithBlurredBg" href="#">
-          <img [src]="baseRoot+lastNews[1].urlImage_narrow" alt="">
-          <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
-          <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
-          <h1>{{lastNews[1].date}}</h1>
-          <h2>{{lastNews[1].title}}</h2>
-          <p>{{maxLenght(lastNews[1].texto, 390)}}</p>
-        </a>
-      </div>
-      <div class="box d">
-        <a [routerLink]="['/working']">
-          <div class="botond">
-            <div class="textd">
-              ¡HAZTE SOCIO!
+    <div class="container-banner">
+        <div class="banner-noticias">
+            <div class="subsubtexto">
+                <h1>{{texto1}}</h1>
+                <h2>{{texto2}}</h2>
+                <p>{{texto3}}</p>
+                <p>{{texto4}}</p>
             </div>
-          </div>
-        </a>
-        <!--                <div class="botond">-->
-        <!--                    <div class="textd">-->
-        <!--                      -->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <a class="textWithBlurredBg" href="#">
-          <img [src]="baseRoot+lastNews[2].urlImage_narrow" alt="">
-          <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
-          <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
-          <h1>{{lastNews[2].date}}</h1>
-          <h2>{{lastNews[2].title}}</h2>
-          <p>{{maxLenght(lastNews[2].texto, 320)}}</p>
-        </a>
-
-      </div>
+        </div>
     </div>
-  </div>
+    <div class="container-grid">
+        <div class="wrapper">
+            <div class="box a">
+                <div class="newscontent">
+                    <a (click)="goAboxNews()" class="textWithBlurredBg">
+                        <img [src]="baseRoot+lastNews[0].urlImage_narrow" alt="">
+                        <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
+                        <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
+                        <h1>{{lastNews[0].date}}</h1>
+                        <h2>{{lastNews[0].title}}</h2>
+                        <p>{{maxLenght(lastNews[1].texto, 800)}}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box b">
+                <div class="textb">
+                    En Lomas de Jesús Casa Club puedes adquirir un terreno único para construir tu casa soñada.
+                    <div class="botonb" id="inline">
+                        <b> ENCUENTRA TU TERRENO IDEAL</b> <i class="fas fa-greater-than icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box c">
+                <a [routerLink]="['/portal-de-noticias']">
+                    <div class="botonc">
+                        VER PORTAL
+                        <br> DE NOTICIAS
+                    </div>
+                </a>
+                <div class="newscontent">
+                    <a (click)="goCboxNews()" class="textWithBlurredBg">
+                        <img [src]="baseRoot+lastNews[1].urlImage_narrow" alt="">
+                        <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
+                        <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
+                        <h1>{{lastNews[1].date}}</h1>
+                        <h2>{{lastNews[1].title}}</h2>
+                        <p>{{maxLenght(lastNews[1].texto, 390)}}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box d">
+                <a [routerLink]="['/working']">
+                    <div class="botond">
+                        <div class="textd">
+                            ¡HAZTE SOCIO!
+                        </div>
+                    </div>
+                </a>
+                <!--                <div class="botond">-->
+                <!--                    <div class="textd">-->
+                <!--                      -->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <div class="newscontent">
+                    <a (click)="goDboxNews()" class="textWithBlurredBg">
+                        <img [src]="baseRoot+lastNews[2].urlImage_narrow" alt="">
+                        <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
+                        <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
+                        <h1>{{lastNews[2].date}}</h1>
+                        <h2>{{lastNews[2].title}}</h2>
+                        <p>{{maxLenght(lastNews[2].texto, 320)}}</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
