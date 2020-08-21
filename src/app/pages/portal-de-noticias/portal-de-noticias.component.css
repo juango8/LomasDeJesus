@@ -46,7 +46,7 @@
 
 .container {
   font-family: 'Amaranth', serif;
-  font-size: 1.3em;
+  font-size: 1rem;
   width: 100%;
   color: rgba(0, 0, 61, 1);
   display: flex;

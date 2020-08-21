@@ -14,12 +14,12 @@
             <div class="box a">
                 <div class="newscontent">
                     <a (click)="goAboxNews()" class="textWithBlurredBg">
-                        <img [src]="baseRoot+lastNews[0].urlImage_narrow" alt="">
+                        <img [src]="baseRoot+lastNews[0].urlImage_big" alt="">
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
                         <h1>{{lastNews[0].date}}</h1>
                         <h2>{{lastNews[0].title}}</h2>
-                        <p>{{maxLenght(lastNews[1].texto, 800)}}</p>
+                        <p>{{maxLenght(lastNews[1].texto, 500)}}</p>
                     </a>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
                         <h1>{{lastNews[1].date}}</h1>
                         <h2>{{lastNews[1].title}}</h2>
-                        <p>{{maxLenght(lastNews[1].texto, 390)}}</p>
+                        <p>{{maxLenght(lastNews[1].texto, 190)}}</p>
                     </a>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
                         <h1>{{lastNews[2].date}}</h1>
                         <h2>{{lastNews[2].title}}</h2>
-                        <p>{{maxLenght(lastNews[2].texto, 320)}}</p>
+                        <p>{{maxLenght(lastNews[2].texto, 150)}}</p>
                     </a>
                 </div>
 
