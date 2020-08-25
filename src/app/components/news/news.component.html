@@ -17,9 +17,11 @@
                         <img [src]="baseRoot+lastNews[0].urlImage_wide" alt="">
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
-                        <h1>{{lastNews[0].date}}</h1>
-                        <h2>{{lastNews[0].title}}</h2>
-                        <p>{{maxLenght(lastNews[1].texto, 500)}}</p>
+
+                        <h1 class="acontent">{{lastNews[0].date}}</h1>
+                        <h2 class="acontent">{{lastNews[0].title}}</h2>
+                        <p class="acontent">{{maxLenght(lastNews[1].texto, 500)}}</p>
+
                     </a>
                 </div>
             </div>

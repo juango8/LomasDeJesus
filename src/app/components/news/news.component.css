@@ -72,20 +72,23 @@
 }
 
 .a {
-    margin-left: -53%;
+    margin-left: -50%;
     grid-area: a;
 }
 
-.box a img{
+.box a img {
     position: relative;
     left: 0%;
-    
 }
 
 .textWithBlurredBg img {
     /*padding-left: 1em;*/
     width: 37.5em;
     height: 25em;
+}
+
+.acontent {
+    margin-left: 7rem;
 }
 
 .textWithBlurredBg {
@@ -115,7 +118,7 @@
 
 .textWithBlurredBg p {
     font-family: 'Amaranth', serif;
-    width: 92%;
+    width: 80%;
     top: 33%;
     left: 4%;
     text-align: justify;
