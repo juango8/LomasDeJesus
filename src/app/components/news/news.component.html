@@ -14,7 +14,7 @@
             <div class="box a">
                 <div class="newscontent">
                     <a (click)="goAboxNews()" class="textWithBlurredBg">
-                        <img [src]="baseRoot+lastNews[0].urlImage_big" alt="">
+                        <img [src]="baseRoot+lastNews[0].urlImage_wide" alt="">
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
                         <h1>{{lastNews[0].date}}</h1>
@@ -40,7 +40,7 @@
                 </a>
                 <div class="newscontent">
                     <a (click)="goCboxNews()" class="textWithBlurredBg">
-                        <img [src]="baseRoot+lastNews[1].urlImage_narrow" alt="">
+                        <img [src]="baseRoot+lastNews[1].urlImage_medium" alt="">
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_wide">-->
                         <!--                    <img alt="" [src]="baseRoot+lastNews[0].urlImage_medium">-->
                         <h1>{{lastNews[1].date}}</h1>

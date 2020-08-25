@@ -60,8 +60,8 @@
 
 .wrapper {
     display: grid;
-    gap: 10px;
-    grid-template: "a a a" auto "c d b" auto/ auto auto 37%;
+    gap: 0.4em;
+    grid-template: "a a a" auto "c d b" auto/ auto auto 45%;
 }
 
 .box {
@@ -74,6 +74,12 @@
 .a {
     margin-left: -53%;
     grid-area: a;
+}
+
+.box a img{
+    position: relative;
+    left: 0%;
+    
 }
 
 .textWithBlurredBg img {

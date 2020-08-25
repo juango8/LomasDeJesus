@@ -77,12 +77,12 @@
                 <div *ngFor="let post of news" class="grid-item">
                     <div class="container">
                         <img [src]="baseRoot+post.urlImage_medium" alt="ImageNews">
-                        <div class="text">
+                        <div (click)="getDetail(post.id)" class="text">
                             <h1>{{post.date}}</h1>
                             <h2>{{post.title}}</h2>
                             <p>{{maxLenght(post.texto)}}</p>
                             <div class="botonb">
-                                <b (click)="getDetail(post.id)"> Seguir leyendo</b> <i class="fas fa-greater-than icon"></i>
+                                <b> Seguir leyendo</b> <i class="fas fa-greater-than icon"></i>
                             </div>
                         </div>
                     </div>
@@ -90,9 +90,9 @@
             </div>
 
         </div>
-        <div class="h-0">
+    <!--     <div class="h-0">
             <app-news-views></app-news-views>
-        </div>
+        </div> -->
     </div>
     <div *ngIf="!statePanel" class="h-0">
         <div class="grid-container">
