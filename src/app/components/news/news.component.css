@@ -88,7 +88,7 @@
 }
 
 .acontent {
-    margin-left: 7rem;
+    margin-left: 10rem;
 }
 
 .textWithBlurredBg {
@@ -118,7 +118,7 @@
 
 .textWithBlurredBg p {
     font-family: 'Amaranth', serif;
-    width: 80%;
+    width: 70%;
     top: 33%;
     left: 4%;
     text-align: justify;
