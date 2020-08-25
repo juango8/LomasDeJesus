@@ -22,6 +22,10 @@
   /*padding: 6em 0;*/
 }
 
+img {
+  width: 100%;
+}
+
 .buttonText {
   font-size: 2.5em;
   margin: .7em auto;
@@ -37,6 +41,9 @@
   .buttonLeft, .buttonRight {
     float: left;
     width: 80%!important;
+  }
+  img {
+    margin: auto;
   }
   .buttons {
     flex-direction: column!important;

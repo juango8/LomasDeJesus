@@ -37,3 +37,11 @@ progress::-moz-progress-bar {
   background: #00003d;
 }
 progress::-webkit-progress-value { background: #00003d; }
+
+
+@media only screen and (max-device-width: 480px) {
+  
+  .bg-text{
+    font-size: 1em;
+  }
+}
