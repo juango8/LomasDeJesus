@@ -12,4 +12,8 @@ export class OportunitiesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openPDF(){
+    window.open('../../../assets/pdf/LOMAS-DE-JESÚS-HISTÓRICA-Y-VIGENTE-PROPIEDAD-PRIVADA.pdf');
+  }
+
 }
