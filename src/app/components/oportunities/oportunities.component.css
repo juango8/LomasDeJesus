@@ -23,7 +23,9 @@
 }
 
 img {
-  width: 100%;
+  width: 30%;
+  height: 35%;
+  padding: 0 0.3em;
 }
 
 .buttonText {
@@ -44,6 +46,7 @@ img {
   }
   img {
     margin: auto;
+    width: 100%;
   }
   .buttons {
     flex-direction: column!important;

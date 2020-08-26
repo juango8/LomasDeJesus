@@ -9,11 +9,13 @@
     </div>
 
     <div class="buttons">
-        <div (click)="openPDF()" class="buttonLeft">
+        <div class="buttonLeft">
             <div  class="buttonText">
                 Seguridad Jurídica
             </div>
-            <img src="assets/img/pdf.png" alt="seguridad juridica">
+            <img (click)="openPDF1()" src="assets/img/pdf1.png" alt="seguridad juridica">
+            <img (click)="openPDF()" src="assets/img/pdf.png" alt="seguridad juridica">
+            <img (click)="openPDF2()" src="assets/img/pdf2.png" alt="seguridad juridica">
         </div>
         <div class="buttonRight">
             <div [routerLink]="['/working']" class="buttonText">
