@@ -75,9 +75,9 @@
         <div class="h-0">
             <div class="grid-container">
                 <div *ngFor="let post of news" class="grid-item">
-                    <div class="container">
+                    <div (click)="getDetail(post.id)" class="container">
                         <img [src]="baseRoot+post.urlImage_medium" alt="ImageNews">
-                        <div (click)="getDetail(post.id)" class="text">
+                        <div class="text">
                             <h1>{{post.date}}</h1>
                             <h2>{{post.title}}</h2>
                             <p>{{maxLenght(post.texto)}}</p>
