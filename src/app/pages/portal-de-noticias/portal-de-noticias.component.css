@@ -207,6 +207,13 @@ select {
     background-color: rgba(0, 0, 61, 1);
   }
 
+  .detail-new {
+    color: white;
+    width: 95vw;
+    padding: 1em 0em;
+    text-align: left;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: auto;
