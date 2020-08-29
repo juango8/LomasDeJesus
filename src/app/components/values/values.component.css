@@ -3,7 +3,7 @@
   color: #ffffff;
   text-align: center;
   align-items: center;
-  padding: 3em 0;
+  padding: 3em 20em;
   max-width: 100%;
 }
 
@@ -16,6 +16,7 @@ h2 {
   font-size: 2em;
   margin-bottom: 1em;
   font-family: 'Belleza', serif;
+  padding: 0 3em;
 }
 
 p {
@@ -36,6 +37,7 @@ p {
   h2 {
     font-size: 2.5em;
     margin-bottom: 0;
+    padding: 0;
   }
   p {
     font-size: 2em;

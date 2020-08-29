@@ -86,6 +86,6 @@ p {
   }
   .buttonRight {
     width: 320px;
-    height: 2.5em;
+    height: auto;
   }
 }
