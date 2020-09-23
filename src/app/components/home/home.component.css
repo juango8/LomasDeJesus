@@ -8,6 +8,11 @@
     height: 100%;
     width: 100%;
   }
+
+  #cel {
+    display: none;
+
+  }
   
   .container-banner {
     position: absolute;
@@ -46,7 +51,7 @@
     font-family: 'Amaranth', serif;
   }
   
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 580px) {
     .navbar-image {
         position: relative;
         max-width: 100%;
@@ -61,6 +66,14 @@
         top: 10%;
         right: 0;
         height: 30em;
+    }
+
+    #pc {
+      display: none;
+    }
+
+    #cel {
+      display: initial;
     }
     .banner-noticias {
         display: block;
