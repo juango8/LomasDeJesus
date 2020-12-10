@@ -17,11 +17,11 @@ export class OportunitiesComponent implements OnInit {
   }
 
   openPDF1(){
-    window.open('../../../assets/pdf/rd-0595-2019.pdf');
+    window.open('../../../assets/pdf/resolucion_directoral.pdf');
   }
 
   openPDF2(){
-    window.open('../../../assets/pdf/escaneo.pdf');
+    window.open('../../../assets/pdf/carta_notarial.pdf');
   }
 
 }
